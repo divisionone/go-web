@@ -127,6 +127,13 @@ func (s *service) start() error {
 	srv.Endpoints = s.srv.Endpoints
 	s.srv = srv
 
+	// Update the advertisment address if it's port is set to 0 with
+	// that chosen by the listener.
+	_, port, _ := net.SplitHostPort(s.opts.Address)
+	if port != "" && s.srv.Nodes[0].Port == 0 {
+		s.srv.Nodes[0].Port, _ = strconv.Atoi(port)
+	}
+
 	var h http.Handler
 
 	if s.opts.Handler != nil {
