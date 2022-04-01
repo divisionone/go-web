@@ -5,13 +5,14 @@ go 1.17
 require (
 	github.com/divisionone/cli v1.0.0
 	github.com/divisionone/go-micro v1.2.2-0.20220330054725-16024c10ee32
+	github.com/divisionone/micro-go-log v0.0.0-20220329225141-38dfc0353446
 	github.com/divisionone/util v1.0.6-0.20220330054734-69f4e9e6913b
-	github.com/micro/go-log v0.1.0
-	github.com/micro/util v0.2.0
 	github.com/pborman/uuid v1.2.1
 )
 
 require (
+	github.com/hashicorp/go-sockaddr v1.0.1 // indirect
+	github.com/micro/go-log v0.1.0 // indirect
 	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/tools v0.1.6-0.20210726203631-07bc1bf47fb2 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
