@@ -4,9 +4,9 @@ go 1.17
 
 require (
 	github.com/divisionone/cli v1.0.0
-	github.com/divisionone/go-micro v1.2.2-0.20220407024343-05afdfbc0f0e
+	github.com/divisionone/go-micro v1.2.2-0.20220407025404-da2522b92c0a
 	github.com/divisionone/micro-go-log v0.0.0-20220401021801-5024c5e56f11
-	github.com/divisionone/util v1.0.6-0.20220407024355-8bda5b31716a
+	github.com/divisionone/util v1.0.6-0.20220407025414-28c003ab3e30
 	github.com/pborman/uuid v1.2.1
 )
 
@@ -19,7 +19,7 @@ require (
 
 require (
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
-	github.com/divisionone/go-rcache v1.0.4-0.20220407022432-98b4cc6a7e06 // indirect
+	github.com/divisionone/go-rcache v1.0.4-0.20220407024400-4e4e3e9b2249 // indirect
 	github.com/divisionone/mdns v1.0.1 // indirect
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/go-log/log v0.1.0 // indirect
