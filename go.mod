@@ -6,7 +6,7 @@ require (
 	github.com/divisionone/cli v1.0.0
 	github.com/divisionone/go-micro v1.2.2-0.20220407231945-3e7588c65f7f
 	github.com/divisionone/micro-go-log v0.0.0-20220401021801-5024c5e56f11
-	github.com/divisionone/util v1.0.6-0.20220407231832-e160f5470eee
+	github.com/divisionone/util v1.0.6-0.20220408001024-b1ac14f46bbd
 	github.com/pborman/uuid v1.2.1
 )
 
