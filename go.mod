@@ -43,5 +43,3 @@ require (
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f // indirect
 	golang.org/x/sys v0.0.0-20220310020820-b874c991c1a5 // indirect
 )
-
-replace google.golang.org/protobuf => google.golang.org/protobuf v1.28.0
