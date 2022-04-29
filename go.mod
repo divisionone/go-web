@@ -4,9 +4,9 @@ go 1.17
 
 require (
 	github.com/divisionone/cli v1.0.0
-	github.com/divisionone/go-micro v1.2.2-0.20220407231945-3e7588c65f7f
+	github.com/divisionone/go-micro v1.2.2-0.20220429041128-e1a3c32d53bf
 	github.com/divisionone/micro-go-log v0.0.0-20220401021801-5024c5e56f11
-	github.com/divisionone/util v1.0.6-0.20220408001024-b1ac14f46bbd
+	github.com/divisionone/util v1.0.6-0.20220429041110-220de79cd0f2
 	github.com/pborman/uuid v1.2.1
 )
 
@@ -15,6 +15,7 @@ require (
 	golang.org/x/mod v0.4.2 // indirect
 	golang.org/x/tools v0.1.6-0.20210726203631-07bc1bf47fb2 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	google.golang.org/protobuf v1.26.0 // indirect
 )
 
 require (
@@ -23,7 +24,7 @@ require (
 	github.com/divisionone/mdns v1.0.1 // indirect
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/go-log/log v0.1.0 // indirect
-	github.com/golang/protobuf v1.3.5 // indirect
+	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/hashicorp/consul/api v1.5.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.1 // indirect
@@ -42,3 +43,5 @@ require (
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f // indirect
 	golang.org/x/sys v0.0.0-20220310020820-b874c991c1a5 // indirect
 )
+
+replace google.golang.org/protobuf => google.golang.org/protobuf v1.28.0
