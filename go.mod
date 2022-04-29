@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/divisionone/cli v1.0.0
-	github.com/divisionone/go-micro v1.2.2-0.20220429052647-080b74a927ae
+	github.com/divisionone/go-micro v1.2.2-0.20220429055917-087d285d4a42
 	github.com/divisionone/micro-go-log v0.0.0-20220401021801-5024c5e56f11
 	github.com/divisionone/util v1.0.6-0.20220429052633-b82d53737035
 	github.com/pborman/uuid v1.2.1
@@ -43,5 +43,3 @@ require (
 	golang.org/x/net v0.0.0-20220225172249-27dd8689420f // indirect
 	golang.org/x/sys v0.0.0-20220310020820-b874c991c1a5 // indirect
 )
-
-replace google.golang.org/protobuf => google.golang.org/protobuf v1.28.0

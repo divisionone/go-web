@@ -8,8 +8,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/divisionone/cli v1.0.0 h1:eGRXODR6fknJ11ExO+CVvalu83PG96QTwzLUu5q9YPI=
 github.com/divisionone/cli v1.0.0/go.mod h1:HkcoCxovQ+y6XJQjKo5biNu29acObY/wkoMjWp09KbQ=
-github.com/divisionone/go-micro v1.2.2-0.20220429052647-080b74a927ae h1:6zVB40YztGD+rFr+E2QEZ2dUqbnsuellzZ8tlPzezdo=
-github.com/divisionone/go-micro v1.2.2-0.20220429052647-080b74a927ae/go.mod h1:aTVMBB5w2Tovi0VzTpPKzXeGMe7RlD9gnmSPqOve1PM=
+github.com/divisionone/go-micro v1.2.2-0.20220429055917-087d285d4a42 h1:v8XyzA9/OabodUcIrm3OmvEzfX8b/7JDsEXEyqJtsGE=
+github.com/divisionone/go-micro v1.2.2-0.20220429055917-087d285d4a42/go.mod h1:oRAOqwuv7AULEvLXp4yy5jcoNL0QElLdQBCJkRkZkHk=
 github.com/divisionone/go-rcache v1.0.4-0.20220407231839-33729de013cc h1:RgLn/oglJ4fpPkoqNB5OIeb0mfM6GxUfKR1G5jTELu4=
 github.com/divisionone/go-rcache v1.0.4-0.20220407231839-33729de013cc/go.mod h1:qN+wLoLjskj9BMZjOxDWSHx39ahusIqO1UW2vQriH4I=
 github.com/divisionone/mdns v1.0.1 h1:m6TgddiTUkCCjRj2A2D78U6vAGuVFI/K1Z9fBQ+6578=
@@ -164,8 +164,9 @@ golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898/go.mod h1:I/5z698sn9Ka8T
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
 golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 h1:go1bK/D/BFZV2I8cIQd1NKEZ+0owSTG1fDTci4IqFcE=
 golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
-google.golang.org/protobuf v1.28.0 h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw=
-google.golang.org/protobuf v1.28.0/go.mod h1:HV8QOd/L58Z+nl8r43ehVNZIU/HEI6OcFqwMG9pJV4I=
+google.golang.org/protobuf v1.26.0-rc.1/go.mod h1:jlhhOSvTdKEhbULTjvd4ARK9grFBp09yW+WbY/TyQbw=
+google.golang.org/protobuf v1.26.0 h1:bxAC2xTBsZGibn2RTntX0oH50xLsqy1OxA9tTL3p/lk=
+google.golang.org/protobuf v1.26.0/go.mod h1:9q0QmTI4eRPtz6boOQmLYwt+qCgq0jsYwAQnmE0givc=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
