@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/divisionone/cli v1.0.0
-	github.com/divisionone/go-micro v1.2.2-0.20220505031121-c641ec568d86
+	github.com/divisionone/go-micro v1.2.2-0.20220512025950-92ae17a1e740
 	github.com/divisionone/micro-go-log v0.0.0-20220401021801-5024c5e56f11
 	github.com/divisionone/util v1.0.6-0.20220429052633-b82d53737035
 	github.com/pborman/uuid v1.2.1
