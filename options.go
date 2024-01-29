@@ -2,6 +2,7 @@ package web
 
 import (
 	"context"
+	"crypto/tls"
 	"net"
 	"net/http"
 	"time"
@@ -21,6 +22,9 @@ type Options struct {
 
 	RegisterTTL      time.Duration
 	RegisterInterval time.Duration
+
+	// TLSConfig if set will make the server use TLS.
+	TLSConfig *tls.Config
 
 	Listen  func(network, address string) (net.Listener, error)
 	Server  *http.Server
@@ -190,5 +194,12 @@ func AfterStart(fn func() error) Option {
 func AfterStop(fn func() error) Option {
 	return func(o *Options) {
 		o.AfterStop = append(o.AfterStop, fn)
+	}
+}
+
+// WithTLSConfig sets the tls configuration to use when serving requests.
+func WithTLSConfig(cfg *tls.Config) Option {
+	return func(o *Options) {
+		o.TLSConfig = cfg
 	}
 }
