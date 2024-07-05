@@ -14,7 +14,7 @@ import (
 
 	"github.com/divisionone/cli"
 	"github.com/divisionone/go-micro/registry"
-	"github.com/divisionone/micro-go-log"
+	log "github.com/divisionone/micro-go-log"
 	maddr "github.com/divisionone/util/go/lib/addr"
 	mhttp "github.com/divisionone/util/go/lib/http"
 )
@@ -25,6 +25,8 @@ type service struct {
 	mux *http.ServeMux
 	srv *registry.Service
 
+	netSrv *netServer
+
 	sync.Mutex
 	running bool
 	exit    chan chan error
@@ -33,8 +35,9 @@ type service struct {
 func newService(opts ...Option) Service {
 	options := newOptions(opts...)
 	s := &service{
-		opts: options,
-		mux:  http.NewServeMux(),
+		opts:   options,
+		mux:    http.NewServeMux(),
+		netSrv: &netServer{},
 	}
 	s.srv = s.genSrv()
 	return s
@@ -157,7 +160,11 @@ func (s *service) start() error {
 
 	httpSrv.Handler = h
 
-	go httpSrv.Serve(l)
+	if s.opts.TLSConfig != nil {
+		httpSrv.TLSConfig = s.opts.TLSConfig
+	}
+
+	s.netSrv.Serve(httpSrv, l)
 
 	for _, fn := range s.opts.AfterStart {
 		if err := fn(); err != nil {
