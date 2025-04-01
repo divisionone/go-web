@@ -13,9 +13,11 @@ import (
 )
 
 type Options struct {
-	Name      string
-	Version   string
-	Id        string
+	Name    string
+	Version string
+	Id      string
+	// IdFunc is an Id generator function called prior to registration of the service, replacing the Id option value.
+	IdFunc    func(addr string, port int) string
 	Metadata  map[string]string
 	Address   string
 	Advertise string

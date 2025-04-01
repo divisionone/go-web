@@ -75,6 +75,10 @@ func (s *service) genSrv() *registry.Service {
 		addr = "127.0.0.1"
 	}
 
+	if s.opts.IdFunc != nil {
+		s.opts.Id = s.opts.IdFunc(addr, port)
+	}
+
 	return &registry.Service{
 		Name:    s.opts.Name,
 		Version: s.opts.Version,
